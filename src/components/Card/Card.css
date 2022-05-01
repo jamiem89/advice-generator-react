@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategray;
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid white;
+    color: white;
+}
+
+.card__number {
+}
+
+.card__quote{
+
+}
+
+.card__shuffle {
+
+}
