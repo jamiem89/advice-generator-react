@@ -1,9 +1,10 @@
 import React from 'react';
-import './Card.css'
+import './Card.css';
+import { ReactComponent as ShuffleIcon} from './ShuffleIcon.svg';
 
 const Card = (props) => {
 
-    const [quote, setQuote] = React.useState('Click the button for some random wisdom');
+    const [quote, setQuote] = React.useState('Click the button for random wisdom');
     const [number, setNumber] = React.useState('Advice generator');
 
     function handleShuffle(e) {
@@ -23,7 +24,7 @@ const Card = (props) => {
         <div className="card">
             <span className="card__number">{number}</span>
             <p className="card__quote">{quote}</p>
-            <button className="quote-card__shuffle" onClick={handleShuffle}>Random quote</button>
+            <button className="card__button" onClick={handleShuffle}><ShuffleIcon /></button>
         </div>
     )
 }
